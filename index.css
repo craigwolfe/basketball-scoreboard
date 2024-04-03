@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-size:62.5%; 
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+h3{
+	font-size: 2rem;
+	font-weight: bold;
+	color:#EEEEEE;
+}
+h4{
+	font-size: 1rem;
+	font-weight: bold;
+	color:#EEEEEE;
+}
+.container {
+	max-width:575px;
+	display: grid;
+	background-color:#1B244A;
+	grid-template-columns:repeat(3,175px);
+	gap: 20px;
+	justify-content:center;
+}
+#homeScore, #guestScore{
+	color:#F94F6D;
+	font-size:4rem;
+	font-weight:bold;
+}
+.scores{
+	background-color:black;
+	margin-bottom:10px;
+	border-radius: 5px;
+}
+.scoreCard{
+ padding: 20px;
+  font-size: 3rem;
+  color: #ffeead;
+	text-align: center;
+}
+.score-btn{
+	border:2px solid #9AABD8;
+	border-radius:5px;
+	width:25px;
+	height:25px;
+	padding:5px;
+	background:none;
+	color:#EEEEEE;
+	font-weight: bold;
+}
+#clockTimer{
+	font-size: 4rem;
+}

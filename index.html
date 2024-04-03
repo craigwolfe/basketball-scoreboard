@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+  <div class="scoreCard">
+    <h3>HOME</h3>
+    <div id="homeScore" class="scores">0</div>
+    <button class="score-btn" onClick="homeadd1()">1+</button>
+    <button class="score-btn" onClick="homeadd2()">2+</button>
+    <button class="score-btn" onClick="homeadd3()">3+</button>
+    <h4>FOULS</h4>
+    <button id="homeFouls" onClick="homeFl()">0</button>
+    <div>
+      <button id="newGame-btn" onClick="resetGame()">New Game</button>
+      <button id="startStop-btn" onClick="toggleTimer()">Stop Timer</button>
+    </div>
+  </div>
+  <div class="scoreCard">
+    <div class="period">
+      <h3>PERIOD</h3>
+      <div id="Period">
+        <button id="Period-btn" onClick="Period()">0</button>
+        <h3 id="clockTimer">12:00</h3>
+      </div>
+    </div>
+  </div>
+  <div class="scoreCard">
+    <h3>GUEST</h3>
+    <div id="guestScore" class="scores">0</div>
+    <button class="score-btn" onClick="guestadd1()">1+</button>
+    <button class="score-btn" onClick="guestadd2()">2+</button>
+    <button class="score-btn" onClick="guestadd3()">3+</button>
+    <h4>FOULS</h4>
+    <button id="guestFouls" onClick="guestFl()">0</button>
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
