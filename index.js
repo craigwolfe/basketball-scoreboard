@@ -9,7 +9,8 @@ let updateTimerClock = document.getElementById("clockTimer");
 let startStopBtn = document.getElementById("startStop-btn");
 
 
-let score=0;
+let guestScore=0;
+let homeScore=0
 let guestFouls=0;
 let homeFouls=0;
 let period =0;
@@ -59,29 +60,29 @@ function toggleTimer(){
 startTimer();
 
 function homeadd1(){
-	score+= 1;
-	updateHomeScore.textContent=score;
+	homeScore+= 1;
+	updateHomeScore.textContent=homeScore;
 };
 function homeadd2(){
-	score+= 2;
-	updateHomeScore.textContent=score;
+	homeScore+= 2;
+	updateHomeScore.textContent=homeScore;
 };
 function homeadd3(){
-	score+= 3;
-	updateHomeScore.textContent=score;
+	homeScore+= 3;
+	updateHomeScore.textContent=homeScore;
 };
 
 function guestadd1(){
-	score+= 1;
-	updateGuestScore.textContent=score;
+	guestScore+= 1;
+	updateGuestScore.textContent=guestScore;
 };
 function guestadd2(){
-	score+= 2;
-	updateGuestScore.textContent=score;
+	guestScore+= 2;
+	updateGuestScore.textContent=guestScore;
 };
 function guestadd3(){
-	score+= 3;
-	updateGuestScore.textContent=score;
+	guestScore+= 3;
+	updateGuestScore.textContent=guestScore;
 };
 
 function guestFl(){
@@ -105,7 +106,8 @@ function Period(){
 }
 
 function resetGame(){
-	score=0;
+	guestScore=0;
+	homeScore=0;
 	guestFouls=0;
 	homeFouls=0;
 	period=0;
@@ -115,8 +117,8 @@ function resetGame(){
 	clearInterval(timerInterval);
 	timerInterval=null;
 	//update html elements on scores, fouls, period and timer
-	updateGuestScore.textContent=score;
-	updateHomeScore.textContent=score;
+	updateGuestScore.textContent=guestScore;
+	updateHomeScore.textContent=homeScore;
 	updateHomeFouls.textContent=homeFouls;
 	updateGuestFouls.textContent=guestFouls;
 	updatePeriod.textContent=period;
