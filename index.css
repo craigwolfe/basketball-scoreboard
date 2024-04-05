@@ -1,56 +1,81 @@
+@font-face {
+  font-family: "Cursor";
+  src: url("./css/fonts/cursedtimerulil.woff") format("woff");
+}
+
 body {
-    margin: 0;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	font-size:62.5%; 
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  font-family: Segoe, "Cursor", "sans-serif";
 }
-h3{
-	font-size: 2rem;
-	font-weight: bold;
-	color:#EEEEEE;
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #eeeeee;
 }
-h4{
-	font-size: 1rem;
-	font-weight: bold;
-	color:#EEEEEE;
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #eeeeee;
 }
 .container {
-	max-width:575px;
-	display: grid;
-	background-color:#1B244A;
-	grid-template-columns:repeat(3,175px);
-	gap: 20px;
-	justify-content:center;
+  max-width: 675px;
+  display: flex;
+  background-color: #1b244a;
+  grid-template-columns: repeat(3, 175px);
+  gap: 20px;
+  justify-content: center;
+  border-radius: 8px;
 }
-#homeScore, #guestScore{
-	color:#F94F6D;
-	font-size:4rem;
-	font-weight:bold;
+#homeScore,
+#guestScore {
+  color: #f94f6d;
+  font-size: 4rem;
+  font-weight: bold;
 }
-.scores{
-	background-color:black;
-	margin-bottom:10px;
-	border-radius: 5px;
+.scores {
+  background-color: black;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
 }
-.scoreCard{
- padding: 20px;
+.scoreCard {
+  padding: 20px;
   font-size: 3rem;
-  color: #ffeead;
-	text-align: center;
+  /* color: #ffeead; */
+  text-align: center;
 }
-.score-btn{
-	border:2px solid #9AABD8;
-	border-radius:5px;
-	width:25px;
-	height:25px;
-	padding:5px;
-	background:none;
-	color:#EEEEEE;
-	font-weight: bold;
+.score-btn {
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background: none;
+  color: #eeeeee;
+  font-weight: bold;
 }
-#clockTimer{
-	font-size: 4rem;
+#clockTimer {
+  font-size: 4rem;
+}
+#guestFouls,
+#homeFouls,
+#changePeriod {
+  color: #eeeeee;
+}
+
+.timer-btn,
+.newgame-btn {
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+  width: auto;
+  height: 25px;
+  padding: 5px;
+  background: none;
+  color: #eeeeee;
+  font-weight: bold;
 }
