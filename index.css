@@ -27,7 +27,6 @@ h4 {
   max-width: 675px;
   display: flex;
   background-color: #1b244a;
-  grid-template-columns: repeat(3, 175px);
   gap: 20px;
   justify-content: center;
   border-radius: 8px;
