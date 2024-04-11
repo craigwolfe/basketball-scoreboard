@@ -26,6 +26,7 @@ h4 {
 .container {
   max-width: 675px;
   display: flex;
+  display:grid;
   background-color: #1b244a;
   grid-template-columns: repeat(3, 175px);
   gap: 20px;
